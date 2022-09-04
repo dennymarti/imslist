@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/todo_listitem"
+    android:layout_height="80dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/todo_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:textSize="21dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/todo_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Content"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/todo_button"
+        android:layout_width="74dp"
+        android:layout_height="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="11dp"
+        android:backgroundTint="@color/white"
+        android:drawableTop="@drawable/ic_baseline_more_vert_24"
+        android:drawableTint="@color/black"></Button>
+
+    <RelativeLayout
+        android:layout_marginLeft="250dp"
+        android:layout_width="140dp"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:descendantFocusability="blocksDescendants"
+        android:id="@+id/todo_menu">
+
+        <Button
+            android:id="@+id/todo_finished_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/purple_500"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Erledigen"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/todo_delete_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#F0632E"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Löschen"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+    </RelativeLayout>
+</RelativeLayout>

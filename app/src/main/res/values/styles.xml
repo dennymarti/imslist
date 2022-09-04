@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="purple" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/purple_500</item>
+        <item name="colorOnPrimary">@color/black</item>
+    </style>
+
+    <style name="cyan" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/cyan</item>
+        <item name="colorOnPrimary">@color/black</item>
+    </style>
+
+    <style name="TimePicker.Theme.Cyan" parent="Widget.MaterialComponents.TimePicker">
+        <item name="colorAccent">@color/cyan</item>
+        <item name="colorOnPrimary">@color/black</item>
+    </style>
+</resources>
